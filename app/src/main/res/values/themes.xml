@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChildrensEduGames" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/orange</item>
+    </style>
+
+    <style name="Theme.ChildrensEduGames" parent="Base.Theme.ChildrensEduGames" >
+        <item name="android:buttonStyle">@style/btnStyle</item>
+    </style>
+    <style name="btnStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/orange</item>
+    </style>
+    <style name="header" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/candybeans</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawingFragment"
+    android:padding="10dp"
+    android:background="@color/beige">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.izzzya.childrensedugames.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="#80FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.izzzya.childrensedugames.DrawingView>
+
+        <ImageButton
+            android:layout_marginHorizontal="5dp"
+            android:id="@+id/yellowBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drawing_view" />
+
+        <ImageButton
+            android:layout_marginHorizontal="5dp"
+            android:id="@+id/blueBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/yellowBtn"
+            app:layout_constraintTop_toBottomOf="@+id/drawing_view" />
+
+        <ImageButton
+            android:layout_marginHorizontal="5dp"
+            android:id="@+id/greenBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yellowBtn"
+            app:layout_constraintTop_toBottomOf="@+id/drawing_view" />
+
+        <ImageButton
+            android:layout_marginHorizontal="5dp"
+            android:id="@+id/blackBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/yellow"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/blueBtn"
+            app:layout_constraintTop_toBottomOf="@+id/drawing_view" />
+
+        <ImageButton
+            android:layout_marginHorizontal="5dp"
+            android:id="@+id/whiteBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/yellow"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/greenBtn"
+            app:layout_constraintTop_toBottomOf="@+id/drawing_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
